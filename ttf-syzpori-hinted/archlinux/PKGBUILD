@@ -1,0 +1,35 @@
+# This is an example PKGBUILD file. Use this as a start to creating your own,
+# and remove these comments. For more information, see 'man PKGBUILD'.
+# NOTE: Please fill out the license field for your package! If it is unknown,
+# then please put 'unknown'.
+
+# Maintainer: Your Name <youremail@domain.com>
+pkgname=ttf-syzpori-hinted
+pkgver=1.0.1
+pkgrel=1
+epoch=
+pkgdesc="Syzpori fonts (hinted)"
+arch=('any')
+url="https://github.com/peacebringer1/syzpori/"
+license=('OFL-1.1-RFN')
+groups=()
+depends=()
+makedepends=()
+checkdepends=()
+optdepends=()
+provides=()
+conflicts=()
+replaces=()
+backup=()
+options=()
+install=
+changelog=
+source=("${url}/releases/download/v${pkgver}/SyzporiFonts_hinted.zip")
+noextract=()
+sha256sums=("f550440bb6937288cab890b584dd01aa0472b6a0e856a35e88394d87e002c0f6")
+validpgpkeys=()
+
+package(){
+      mkdir -p $pkgdir/usr/local/share/fonts/Syzpori/
+      cp $srcdir/*.ttf $pkgdir/usr/local/share/fonts/Syzpori/  
+}

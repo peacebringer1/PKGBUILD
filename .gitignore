@@ -3,3 +3,10 @@ output
 *.zip
 pkg/
 src/
+
+# DEBIAN
+*.tar.gz
+*.deb
+*.buildinfo
+*.dsc
+*.changes

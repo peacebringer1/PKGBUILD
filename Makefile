@@ -7,5 +7,6 @@ archlinux-ttf-syzpori-hinted:
 
 debian-ttf-syzpori-hinted:
 	cd ttf-syzpori-hinted/ && \
+	./debian/prepare.sh && \
 	dpkg-buildpackage -us -uc
 	mv ttf-syzpori-hinted_* output/

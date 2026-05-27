@@ -1,0 +1,33 @@
+# This is an example PKGBUILD file. Use this as a start to creating your own,
+# and remove these comments. For more information, see 'man PKGBUILD'.
+# NOTE: Please fill out the license field for your package! If it is unknown,
+# then please put 'unknown'.
+
+# Maintainer: Your Name <youremail@domain.com>
+pkgname=custom-fontconfig
+pkgver=1.0.0
+pkgrel=1
+epoch=
+pkgdesc="Custom system-wide fontconfig configuration"
+arch=('any')
+url="https://github.com/peacebringer1/PKGBUILD"
+license=('WTFPL')
+groups=()
+depends=()
+makedepends=()
+checkdepends=()
+optdepends=()
+provides=()
+conflicts=()
+replaces=()
+backup=()
+options=()
+install=
+changelog=
+noextract=()
+validpgpkeys=()
+
+package(){
+      mkdir -p $pkgdir/etc/fonts/
+      cp $srcdir/fonts.conf $pkgdir/etc/fonts/local.conf
+}

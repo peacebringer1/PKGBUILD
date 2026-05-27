@@ -1,0 +1,13 @@
+Source: custom-fontconfig
+Section: unknown
+Priority: optional
+Maintainer: root <root@root>
+Rules-Requires-Root: no
+Build-Depends:
+ debhelper-compat (= 13),
+Standards-Version: 4.7.2
+Homepage: https://github.com/peacebringer1/PKGBUILD
+
+Package: custom-fontconfig
+Architecture: all
+Description: Custom system-wide fontconfig configuration

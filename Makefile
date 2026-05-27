@@ -17,3 +17,11 @@ archlinux-custom-fontconfig:
 	makepkg -sf 
 	cd custom-fontconfig/archlinux/ && \
 	mv custom-fontconfig-* ../../output/
+
+debian-custom-fontconfig:
+	cp custom-fontconfig/fonts.conf custom-fontconfig/local.conf
+	cd custom-fontconfig/ && \
+	dpkg-buildpackage -us -uc && \
+	rm local.conf
+	mv custom-fontconfig_* output/
+

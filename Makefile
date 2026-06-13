@@ -25,3 +25,8 @@ debian-custom-fontconfig:
 	rm local.conf
 	mv custom-fontconfig_* output/
 
+archlinux-gds:
+	cd gsettings-desktop-schemas/archlinux/ && \
+	makepkg -sf 
+	cd gsettings-desktop-schemas/archlinux && \
+	mv gsettings-* ../../output/

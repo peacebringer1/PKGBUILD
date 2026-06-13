@@ -1,10 +1,12 @@
-archlinux-ttf-syzpori-hinted:
+archlinux-ttf-sh:
+	# ttf-syzpori-hinted
 	cd ttf-syzpori-hinted/archlinux/ && \
 	makepkg -sf 
 	cd ttf-syzpori-hinted/archlinux/ && \
 	mv ttf-syzpori-* ../../output/
 
-archlinux-custom-fontconfig:
+archlinux-cf:
+	# custom-fontconfig
 	# mkdir custom-fontconfig/archlinux/srcS/
 	cp custom-fontconfig/fonts.conf custom-fontconfig/archlinux/src/
 	cd custom-fontconfig/archlinux/ && \
@@ -13,7 +15,15 @@ archlinux-custom-fontconfig:
 	mv custom-fontconfig-* ../../output/
 
 archlinux-gds:
+	# gsettings-desktop-schemas
 	cd gsettings-desktop-schemas/archlinux/ && \
 	makepkg -sf 
 	cd gsettings-desktop-schemas/archlinux && \
 	mv gsettings-* ../../output/
+
+archlinux-cs:
+	# custom-skel
+	cd custom-skel/archlinux/ && \
+	makepkg -sf 
+	cd custom-skel/archlinux && \
+	mv custom-skel-* ../../output/

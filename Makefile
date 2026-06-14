@@ -27,3 +27,10 @@ archlinux-cs:
 	makepkg -sf 
 	cd custom-skel/archlinux && \
 	mv custom-skel-* ../../output/
+
+archlinux-cw:
+	# custom-wallpapers
+	cd custom-wallpapers/archlinux/ && \
+	makepkg -sf 
+	cd custom-wallpapers/archlinux && \
+	mv custom-wallpapers-* ../../output/

@@ -1,0 +1,4 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+NoDisplay=true
+Name=hp-uiscan

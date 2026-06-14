@@ -34,3 +34,10 @@ archlinux-cw:
 	makepkg -sf 
 	cd custom-wallpapers/archlinux && \
 	mv custom-wallpapers-* ../../output/
+
+archlinux-cd:
+	# custom-desktops
+	cd custom-desktops/archlinux/ && \
+	makepkg -sf 
+	cd custom-desktops/archlinux && \
+	mv custom-desktops-* ../../output/

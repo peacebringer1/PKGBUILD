@@ -14,3 +14,4 @@ src/
 # hack to include skel contents
 !custom-skel/archlinux/src
 !custom-wallpapers/archlinux/src
+!custom-desktops/archlinux/src

@@ -19,7 +19,7 @@ archlinux-gds:
 	cd gsettings-desktop-schemas/archlinux/ && \
 	makepkg -sf 
 	cd gsettings-desktop-schemas/archlinux && \
-	mv gsettings-* ../../output/
+	mv gsettings-*.tar.zst ../../output/
 
 archlinux-cs:
 	# custom-skel

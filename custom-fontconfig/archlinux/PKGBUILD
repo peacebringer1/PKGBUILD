@@ -5,7 +5,7 @@
 
 # Maintainer: Your Name <youremail@domain.com>
 pkgname=custom-fontconfig
-pkgver=1.0.0
+pkgver=1.0.1
 pkgrel=1
 epoch=
 pkgdesc="Custom system-wide fontconfig configuration"
@@ -29,5 +29,8 @@ validpgpkeys=()
 
 package(){
       mkdir -p $pkgdir/etc/fonts/
+      mkdir -p $pkgdir/etc/skel/.config/fontconfig/
+
+      cp $srcdir/fonts.conf $pkgdir/etc/skel/.config/fontconfig
       cp $srcdir/fonts.conf $pkgdir/etc/fonts/local.conf
 }

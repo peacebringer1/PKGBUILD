@@ -5,7 +5,7 @@
 
 # Maintainer: Your Name <youremail@domain.com>
 pkgname=ttf-syzpori-hinted
-pkgver=1.0.1
+pkgver=1.0.2
 pkgrel=1
 epoch=
 pkgdesc="Syzpori fonts (hinted)"
@@ -24,9 +24,9 @@ backup=()
 options=()
 install=
 changelog=
-source=("${url}/releases/download/v${pkgver}/SyzporiFonts_hinted.zip")
+source=("${url}/releases/download/v${pkgver}/Syzpori.zip")
 noextract=()
-sha256sums=("f550440bb6937288cab890b584dd01aa0472b6a0e856a35e88394d87e002c0f6")
+sha256sums=("2e8f334afe04fd84b044375693267e42e30891ec06a650ab4a3e5a0ef7ab1f4b")
 validpgpkeys=()
 
 package(){
